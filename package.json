@@ -1,0 +1,8 @@
+{
+  "name": "NLW-04",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/olavocinacio/NLW-04.git",
+  "author": "olavocinacio <olavo1611@gmail.com>",
+  "license": "MIT"
+}
