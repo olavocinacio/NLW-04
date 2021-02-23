@@ -2,4 +2,5 @@ import express from 'express';
 
 const app = express();
 
-app.
+app.listen(3333, () => console.log("Servidor Rodando!!!"));
+
