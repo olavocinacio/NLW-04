@@ -9,6 +9,16 @@ class UserController{
 
         const usersRepository = getRepository(User);
 
+        const userAlreadyExists = await usersRepository.findOne({
+            email
+        }); //Se o email for igaul, indica que o usuário já existe
+
+        if(userAlreadyExists){
+            return response.status(400).json({
+                error: "Usuário já existe!",
+            }); //Caso o usuário já exista, retorna um erro
+        }
+
         const user = usersRepository.create({
             name, email
         })
