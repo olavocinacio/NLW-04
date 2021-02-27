@@ -1,4 +1,6 @@
+import 'reflect-metadata';
 import express from 'express';
+import "./database" //Quando existe um arquivo index, o projeto reconhece que ele quem deve ser importado
 
 const app = express();
 
